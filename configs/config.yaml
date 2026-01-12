@@ -1,0 +1,77 @@
+# Financial Planning Assistant Configuration
+
+# Data Configuration
+data:
+  seed: 42
+  synthetic_data_size: 1000
+  categories:
+    - "Rent"
+    - "Groceries" 
+    - "Utilities"
+    - "Entertainment"
+    - "Transportation"
+    - "Insurance"
+    - "Miscellaneous"
+    - "Healthcare"
+    - "Education"
+    - "Savings"
+
+# Budget Configuration
+budget:
+  default_income: 4000
+  savings_rate_target: 0.20
+  emergency_fund_months: 6
+  max_expense_variance: 0.15
+  
+# Risk Assessment
+risk:
+  risk_tolerance_levels:
+    - "Conservative"
+    - "Moderate" 
+    - "Aggressive"
+  volatility_thresholds:
+    conservative: 0.05
+    moderate: 0.10
+    aggressive: 0.15
+
+# Model Configuration
+models:
+  budget_optimizer:
+    algorithm: "xgboost"
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    
+  goal_tracker:
+    algorithm: "linear_regression"
+    regularization: "ridge"
+    alpha: 1.0
+    
+  risk_assessor:
+    algorithm: "random_forest"
+    n_estimators: 200
+    max_depth: 10
+
+# Evaluation Configuration
+evaluation:
+  test_size: 0.2
+  cv_folds: 5
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "mae"
+    - "rmse"
+
+# Visualization Configuration
+visualization:
+  figure_size: [12, 8]
+  style: "seaborn-v0_8"
+  color_palette: "husl"
+  
+# Demo Configuration
+demo:
+  title: "Financial Planning Assistant"
+  description: "Research and Educational Tool for Personal Finance Analysis"
+  disclaimer: "This is for educational purposes only. Not financial advice."
